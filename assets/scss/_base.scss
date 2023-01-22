@@ -1,0 +1,131 @@
+
+*{
+    font-family: $DMsans;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.about-count{
+    padding: 0;
+}
+
+h2{
+    color: $cwhblack;
+    font-family: $DMsans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+h3{
+    color: $corange;
+    font-family: $DMsans;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+ }
+
+ p{
+    color: $ctext;
+    font-family: $DMsans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8em;
+    //margin: 0 0 20px;
+ }
+
+.container{
+    width: 1140px ; 
+    margin: 0 auto;
+ }
+
+ .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        
+        color: $cwhblack !important;
+        font-family: $DMsans;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1.2em;
+        letter-spacing: 0px;
+        padding-top: 40px;
+        text-transform: none;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+ .btn{
+    font-family: $DMsans;
+    font-size: 13px;
+    font-weight: 600;
+    color:$cwhite;
+    background-color: $bgorange;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: $bglightblack;
+    border-radius: 15px 0px 15px 0px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: $cwhite;
+        background-color: $bgwhblack;
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+ }
+
+ .btn1{
+    color: $cwhblack;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid $corange;
+    padding-bottom: 2px;
+    font-family: $DMsans;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    img.phoneicone1-hover {
+        display: none;
+    }
+    &:hover{
+        color: $corange;   
+        img.phoneicon1 {
+            display: none;
+        } 
+         img.phoneicone1-hover {
+            display: block;
+        }                  
+    }
+
+}
+
+// Website for mobile view
+@media screen and (max-width: 768px){
+    .container{
+        width: 100% ; 
+        margin: 0;
+     }
+
+}
+
+ 
